@@ -32,20 +32,20 @@ html,body {
 .link a:hover {
 	color: #ea5198;
 }
+
 .text {
 	padding-left: 60px;
 	color: #333333;
 	padding-bottom: 20px;
 }
 
-.text span{
+.text span {
 	font-size: 24px;
 	font-weight: bold;
 }
 
 .text p {
 	font-size: 18px;
-	line-height: 0;
 }
 
 .main {
@@ -109,7 +109,6 @@ html,body {
     background-size: cover;
     height: 100%;
     padding-bottom: 35px;
-
 }
 
 .box2 { 
@@ -206,15 +205,14 @@ html,body {
 }
 
 .fl .block {
-	width: 35%;
-	
+	width: 45%;
 }
 
 .block {
 	margin: 10px;
 	border: 3px dashed #a3fc9e;
 	border-radius: 20px;
-   padding: 10px 0px 10px 0px;
+   	padding: 10px 0px 10px 0px;
     text-align: center;
 }
 
@@ -285,7 +283,7 @@ html,body {
 	margin: 0px 0px 5px 5px;
 }
 
-.content3  {
+.content3 {
 	background-color: #109ec0;
 	text-align: center;
 	margin: 5px 5px 0px -10px;
@@ -301,13 +299,14 @@ html,body {
 	position: relative;
 	
 }
+
 .content div {
 	position: absolute;
 	left: 0;
 	top: 0;
 }
 
-.content span{
+.content span {
 	font-size: 24px;
 }
 
@@ -322,19 +321,20 @@ html,body {
 	clear: both;
 }
 
-
+.add {
+	display: none;
+}
 
 @media screen and (max-width: 640px) {
-	.content1, .content2,
+    .content1, .content2,
 	.content3, .content4 {
-		width: 100%;
-		padding-top: 100%;
-		color: #000000;
+		margin: 0;
+		padding: 0;
 	}
 
 	.show-navi {
 		height: 50px;
-		width: 50px;
+		width: 45px;
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -355,3 +355,81 @@ html,body {
 		bottom: 0;
 		margin: auto;
 	}
+
+	.link div {
+		position: absolute;
+		width: 100%;
+		top: 100%;
+		left: 0;
+		z-index: 2;
+		display: none;
+	}
+
+	html,body:after {
+		margin: 0;
+		height: 100%;
+		width: 100%;
+		border-top: 46px solid #653f74;
+	}
+
+	.text {
+		padding-left: 20px;
+	}
+
+	.text span {
+		text-transform: uppercase;
+	}
+
+	.boxes {
+		width: 700px;
+		padding-left: 0;
+		display: block;
+	}
+
+	.box {
+		padding: 0;
+	}
+
+	.box1 {
+		padding-bottom: 20px;
+	}
+
+	.contents {
+		display: block;
+		width: 730px;
+	}
+
+	.content {
+		margin-bottom:10px;
+	}
+
+
+    .block2, .block3 {
+    	display: none;
+    }
+
+    .block span {
+		font-size: 14px;
+		
+	}
+	
+	.add {
+		display: block;
+	}
+
+	.add_phone a {
+		text-decoration: none;
+		color: #a5fd9e;
+	}
+
+	.add_phone span:last-child {
+		font-size: 12px;
+		padding-left: 10px;
+		line-height: 0;
+	}
+
+	.add_phone span:first-child {
+		font-size: 25px;
+		line-height: 0;
+	}
+}
